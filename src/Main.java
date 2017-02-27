@@ -1,17 +1,13 @@
-import HW1.Guard;
-import HW1.Professor;
-import HW1.Student;
+import HW2.Cook;
+import HW2.Savage;
 
-import java.util.concurrent.ThreadLocalRandom;
-
+/**
+ * Edited by Raphael Gal on 2/22/2017.
+ */
 public class Main {
 
     public static void main(String[] args) {
-        new Guard();
-        new Professor();
-
-        for (int i = 0; i < 10; i++) {
-            new Student(i, ThreadLocalRandom.current().nextLong(2000, 6000));
-        }
+        new Savage();
+        new Cook();
     }
 }
